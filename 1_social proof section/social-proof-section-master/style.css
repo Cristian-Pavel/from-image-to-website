@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Spartan", sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  width: 1440px;
+  height: auto;
+  background-position: top 10px left 10px, top 10px right 10px,
+    bottom 10px right 10px, bottom 10px left 10px;
+  background-repeat: no-repeat;
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.topSubContainer.titleContainer {
+  justify-content: space-between;
+}
+
+.ratingsContainer {
+  background-color: brown;
+}
+
+.testimonialsContainer {
+  background-color: chartreuse;
+}
+
+.testimonalBox {
+  background-color: darkmagenta;
+}
