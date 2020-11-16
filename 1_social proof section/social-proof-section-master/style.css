@@ -18,7 +18,7 @@ p {
 .container {
   max-width: 1440px;
   height: auto;
-  margin: 200px auto;
+  margin: auto;
   padding: 40px 50px;
   background-position: top 10px left 10px, top 10px right 10px,
     bottom 10px right 10px, bottom 10px left 10px;
@@ -27,32 +27,80 @@ p {
     url(images/bg-pattern-bottom-desktop.svg);
   display: flex;
   flex-wrap: wrap;
+  /* background-color: violet; */
 }
 
+.topSubContainer {
+  /* background-color: turquoise; */
+  width: 1094px;
+}
 .topSubContainer,
 .testimonialsContainer {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .testimonialsContainer {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
+  margin-top: 68px;
 }
 
 .testimonalBox {
-  background-color: darkmagenta;
-  margin-right: 5px;
+  background-color: hsl(300, 43%, 22%);
+  width: 276px;
+  height: 162px;
+  margin-right: 28px;
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+}
+
+.pictureName {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.testimName {
+  display: flex;
+  flex-direction: column;
+  margin-left: 22px;
+}
+
+.testimName h3,
+p {
+  margin: 0px;
+}
+
+.testimName h3 {
+  color: white;
+}
+
+.testimName p {
+  color: hsl(333, 80%, 67%);
+}
+
+.testimonalBox img {
+  border-radius: 45px;
+  width: 40px;
 }
 
 .titleContainer {
-  width: 35%;
-  display: inline-block;
-  margin-left: 50px;
+  /* background-color: tomato; */
+  width: 326px;
+  flex-wrap: wrap;
+  /* display: inline-block; */
+  /* margin-left: 150px; */
   margin-top: 40px;
 }
 
 .ratingsContainer {
-  width: 35%;
-  margin-left: 90px;
+  width: auto;
+  margin-left: 250px;
+
+  flex-wrap: wrap;
 }
 
 #bigTitle {
@@ -65,14 +113,18 @@ p {
 #subTitle {
   font-weight: 400;
   color: grey;
+  padding-top: 15px;
 }
 
 .rating {
   background-color: hsl(300, 24%, 96%);
   margin: 2px;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   border-radius: 15px;
   margin-bottom: 20px;
+  width: 353px;
+  height: 30px;
 }
 
 .stars {
@@ -84,21 +136,71 @@ p {
   font-size: 12px;
   margin-right: 25px;
   display: inline-block;
+  vertical-align: middle;
 }
 
-.one {
+.rating.one {
   position: relative;
   top: 10px;
   left: 20px;
+  margin-top: 25px;
 }
-.two {
+.rating.two {
   position: relative;
   top: 10px;
   left: 60px;
 }
 
-.three {
+.rating.three {
   position: relative;
   top: 10px;
   left: 100px;
+}
+
+.testimonalBox.two {
+  position: relative;
+  top: 15px;
+}
+
+.testimonalBox.three {
+  position: relative;
+  top: 30px;
+}
+
+@media (max-width: 768px) {
+  .titleContainer {
+    /* background-color: tomato; */
+    width: 326px;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: inline-block; */
+    /* margin-left: 150px; */
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .rating.one {
+    position: relative;
+    top: 10px;
+    left: 0px;
+    margin-top: 25px;
+  }
+  .rating.two {
+    position: relative;
+    top: 10px;
+    left: 0px;
+  }
+
+  .rating.three {
+    position: relative;
+    top: 10px;
+    left: 0px;
+  }
+
+  .ratingsContainer {
+    /* width: auto; */
+    /* margin-left: 100px; */
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
 }
