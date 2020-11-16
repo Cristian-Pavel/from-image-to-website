@@ -177,8 +177,28 @@ p {
     /* margin-left: 150px; */
     margin-top: 40px;
     justify-content: center;
+    align-content: center;
   }
 
+  #bigTitle,
+  #subTitle {
+    text-align: center;
+  }
+
+  .ratingsContainer {
+    /* width: auto; */
+    /* margin-left: 100px; */
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+
+  .rating p {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    position: relative;
+    bottom: 10px;
+  }
   .rating.one {
     position: relative;
     top: 10px;
@@ -195,12 +215,5 @@ p {
     position: relative;
     top: 10px;
     left: 0px;
-  }
-
-  .ratingsContainer {
-    /* width: auto; */
-    /* margin-left: 100px; */
-    flex-wrap: wrap;
-    margin-left: 0px;
   }
 }
