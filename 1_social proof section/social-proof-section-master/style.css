@@ -55,6 +55,19 @@ p {
   border-radius: 10px;
   padding: 30px;
   color: white;
+  position: relative;
+}
+
+.testimonalBox.one:hover {
+  top: -15px;
+}
+
+.testimonalBox.two:hover {
+  top: -20px;
+}
+
+.testimonalBox.three:hover {
+  top: -25px;
 }
 
 .pictureName {
@@ -125,6 +138,10 @@ p {
   margin-bottom: 20px;
   width: 353px;
   height: 30px;
+}
+
+.rating:hover {
+  box-shadow: 0 0 30px #ccc;
 }
 
 .stars {
