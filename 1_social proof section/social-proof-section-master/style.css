@@ -58,6 +58,13 @@ p {
   position: relative;
 }
 
+.testimonalBox.one,
+.two,
+.three {
+  transition-duration: 0.75s;
+  top: 0px;
+}
+
 .testimonalBox.one:hover {
   top: -15px;
 }
