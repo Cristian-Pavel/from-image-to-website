@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
+/* https://github.com/JessicaStrachan/front-end-mentor/blob/master/faq-accordion-card/styles/styles.css */
+
 * {
   font-family: "Kumbh Sans", sans-serif;
 }
@@ -26,6 +28,8 @@ body {
   width: 757px;
   height: 60vh;
   background-color: white;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .photoContainer {
@@ -35,31 +39,33 @@ body {
   /* background-color: yellowgreen; */
 }
 
-.photoContainer img {
+/* .photoContainer img {
   max-width: 100%;
   max-height: 100%;
-}
+} */
 
 #dskPattern {
   position: relative;
+  width: 138%;
   z-index: 1;
-  left: -6%;
-  top: 3%;
+  left: -72%;
+  top: -60%;
 }
 
 #illustrationPattern {
   position: absolute;
-  z-index: 3;
-  width: 13.9%;
-  top: 163px;
-  right: 900px;
+    z-index: 3;
+    width: 11.9%;
+    top: 150px;
+    right: 912px;
 }
 
 #illustrationWoman {
-  max-width: 100%;
-  max-height: 51%;
-  position: absolute;
+  max-width: 80%;
+  max-height: 90%;
+  position: relative;
   z-index: 2;
-  top: 61px;
-  left: 167px;
+  top: -636px;
+  left: -70px;
+}
 }
