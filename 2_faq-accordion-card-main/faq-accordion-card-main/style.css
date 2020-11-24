@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-/* https://github.com/JessicaStrachan/front-end-mentor/blob/master/faq-accordion-card/styles/styles.css */
+/* https://github.com/JessicaStrachan/front-end-mentor/blob/master/faq-accordion-card/styles/styles.css 
+
+https://github.com/astroud/frontendmentor-faq-accordion-card
+
+Posibil model - https://astroud.github.io/frontendmentor-faq-accordion-card/
+
+*/
 
 * {
   font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  margin: 0;
 }
 .attribution {
   font-size: 11px;
@@ -14,9 +26,7 @@
   color: hsl(228, 45%, 44%);
 }
 
-body {
-  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-  background-repeat: no-repeat;
+.background {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +34,126 @@ body {
   align-items: center;
 }
 
+/* Incercare 2 */
+
+.contentContainer {
+  height: 400px;
+  width: 700px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.photoContainer {
+  max-height: 100%;
+  width: 50%;
+  /* background-color: teal; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#dskPattern {
+  width: 190%;
+  height: 188%;
+  position: relative;
+  left: -337px;
+  top: -230px;
+  z-index: 1;
+}
+
+#illustrationWoman {
+  width: 115%;
+  height: 75%;
+  position: relative;
+  left: -70px;
+  top: -712px;
+  z-index: 2;
+}
+
+#illustrationBox {
+  width: 38%;
+  height: 38%;
+  position: relative;
+  left: -410px;
+  top: -183px;
+  z-index: 3;
+}
+
+.faqContainer {
+  max-height: 100%;
+  width: 50%;
+  padding: 20px;
+  overflow: hidden;
+  /* overflow-y: auto; */
+}
+
+/* .accordionLabel,
+accordionContent {
+  /* padding: 14px 20px; 
+} */
+
+.accordionLabel {
+  cursor: pointer;
+  position: relative;
+  transition: 0.1s;
+  display: inline-block;
+  width: 288px;
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+  padding-top: 13px;
+  padding-bottom: 15px;
+  border-bottom: 1.5px solid #e9e9eb;
+}
+
+.accordionLabel::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+
+  right: -11px;
+  width: 12px;
+  height: 6px;
+  background-image: url(images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.accordionContent {
+  display: none;
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+  width: 284px;
+}
+
+.accordionContent p {
+  margin: 5px 0px;
+}
+
+.accordionInput {
+  display: none;
+}
+
+.accordionInput:checked ~ .accordionContent {
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #e9e9eb;
+}
+
+.accordionInput:checked ~ .accordionLabel {
+  border-bottom: none;
+}
+
+.accordionInput:checked ~ .accordionLabel::after {
+  transform: rotate(0.5turn);
+}
+
+/*
 .contentContainer {
   width: 757px;
   height: 60vh;
@@ -36,13 +166,24 @@ body {
   width: 477px;
   height: 347px;
   overflow: hidden;
-  /* background-color: yellowgreen; */
+  /* background-color: yellowgreen; 
 }
 
-/* .photoContainer img {
+.faqContainer {
+  position: relative;
+  top: -340px;
+  right: -360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.photoContainer img {
   max-width: 100%;
   max-height: 100%;
-} */
+}
 
 #dskPattern {
   position: relative;
@@ -54,10 +195,10 @@ body {
 
 #illustrationPattern {
   position: absolute;
-    z-index: 3;
-    width: 11.9%;
-    top: 150px;
-    right: 912px;
+  z-index: 3;
+  width: 11.9%;
+  top: 150px;
+  right: 912px;
 }
 
 #illustrationWoman {
@@ -68,4 +209,42 @@ body {
   top: -636px;
   left: -70px;
 }
+
+h1 {
+  color: black;
+  position: relative;
+  top: -330px;
+  right: -400px;
+  z-index: 5;
 }
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+/*
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.panel p {
+  font-size: 12px;
+}
+*/
