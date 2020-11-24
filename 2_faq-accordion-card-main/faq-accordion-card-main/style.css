@@ -46,6 +46,7 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 15px;
+  position: relative;
 }
 
 .photoContainer {
@@ -55,6 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 
 #dskPattern {
@@ -76,13 +78,13 @@ body {
 }
 
 #illustrationBox {
-  width: 9.9%;
-  height: 17%;
+  width: 20.9%;
+  height: 38%;
   display: inline-block;
-  position: relative;
-  left: 336px;
-  top: -379px;
-  z-index: 3;
+  position: absolute;
+  left: -71px;
+  top: 152px;
+  z-index: 4;
 }
 
 .faqContainer {
