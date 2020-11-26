@@ -47,6 +47,7 @@ body {
     flex-direction: row;
     border-radius: 15px;
     position: relative;
+    box-shadow: 0px 20px 30px 0px hsl(240, 38%, 40%);
   }
 
   .photoContainer {
@@ -95,6 +96,10 @@ body {
     overflow-y: auto;
   }
 
+  .faqContainer h1 {
+    padding-top: 10px;
+  }
+
   .accordionLabel {
     cursor: pointer;
     position: relative;
@@ -102,7 +107,7 @@ body {
     display: inline-block;
     width: 288px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     color: hsl(237, 12%, 33%);
     padding-top: 13px;
     padding-bottom: 15px;
@@ -145,10 +150,12 @@ body {
 
   .accordionInput:checked ~ .accordionLabel {
     border-bottom: none;
+    font-weight: 700;
   }
 
   .accordionInput:checked ~ .accordionLabel::after {
     transform: rotate(0.5turn);
+    right: -8px;
   }
 }
 
@@ -245,7 +252,7 @@ body {
     display: inline-block;
     width: 255px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     color: hsl(237, 12%, 33%);
     padding-top: 20px;
     padding-bottom: 15px;
@@ -289,9 +296,11 @@ body {
 
   .accordionInput:checked ~ .accordionLabel {
     border-bottom: none;
+    font-weight: 700;
   }
 
   .accordionInput:checked ~ .accordionLabel::after {
     transform: rotate(0.5turn);
+    right: -8px;
   }
 }
